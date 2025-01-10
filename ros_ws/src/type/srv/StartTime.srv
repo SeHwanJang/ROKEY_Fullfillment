@@ -1,0 +1,10 @@
+# StartTime.srv
+
+# 요청 부분 (요청 메시지)
+int32 start_value
+string job_list
+---
+
+# 응답 부분 (응답 메시지)
+int32 result_value
+string status
