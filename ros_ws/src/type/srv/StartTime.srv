@@ -1,10 +1,15 @@
 # StartTime.srv
 
 # 요청 부분 (요청 메시지)
-int32 start_value
-string job_list
+int32 start_value  # 작업을 시작할 때 전달하는 값
+string job_list     # 작업 이름
+int32 constatus
+int32 datastatus 
+
 ---
 
 # 응답 부분 (응답 메시지)
-int32 result_value
-string status
+int32 result_value  # 처리된 결과 값
+string status       # 작업 처리 상태 (예: SUCCESS, FAILURE 등)
+string conv
+string data
