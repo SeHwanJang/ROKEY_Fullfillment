@@ -23,7 +23,7 @@ setup(
             'control_tower=project.control_tower:main',
             'server=project.control_tower_server:main',
             'camera=project.camera:main',
-            'main_control=project.subscription:main',
+            'mani_control=project.subscription:main',
             'fix_rotation=project.fix_rotation:main',
         ],
     },
