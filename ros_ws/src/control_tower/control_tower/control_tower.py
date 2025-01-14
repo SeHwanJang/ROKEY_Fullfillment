@@ -135,7 +135,7 @@ class MainWindow(QMainWindow):
         
         self.work_status_text = "비상 정지"
         self.work_status.setPlainText(f"작업 상태 : {self.work_status_text}")
-        self.send_email("sorkaksema@naver.com", "XPLW2BFKH76J", "sorkaksema@naver.com", "긴급정지", "비상")
+        self.send_email("", "", "", "긴급정지", "비상")
         
     # 일시 정지 버튼 클릭 시 이벤트
     def on_pause_button_click(self):
