@@ -20,20 +20,11 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'view = control_tower.control_tower:main',
-            'view_server = control_tower.control_tower_server:main',
-            'cam = control_tower.camera:main',
-            'conbelt_server = control_tower.conbelt_server:main',
-            
-            'move = control_tower.move:main',
-            
-            
-            'temp_server = control_tower.server:main',
-            'temp_client = control_tower.client:main',
-            
-            
-            'fix = control_tower.fix_rotation:main',
-            'fix_sub = control_tower.fix_rotation_sub:main',
+            'control_tower=project.control_tower:main',
+            'server=project.control_tower_server:main',
+            'camera=project.camera:main',
+            'mani_control=project.subscription:main',
+            'fix_rotation=project.fix_rotation:main',
         ],
     },
 )
