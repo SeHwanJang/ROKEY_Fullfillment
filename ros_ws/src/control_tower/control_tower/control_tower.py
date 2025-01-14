@@ -81,13 +81,13 @@ class MainWindow(QMainWindow):
         # 시작 버튼 클릭 이벤트 연결
         self.start.clicked.connect(self.send_message_to_service)
         self.start.clicked.connect(self.on_start_button_click)
-        # 정지 버튼 클릭 이벤트 연결
+        # 정지 버튼 클릭 이벤트 연결 <<이메일 보내짐>>
         self.stop.clicked.connect(self.on_stop_button_click)
         # 일시정지 버튼 클릭 이벤트 연결
         self.pause.clicked.connect(self.on_pause_button_click)
         # 계속 버튼 클릭 이벤트
         self.resume.clicked.connect(self.on_resume_button_click)      
-        # 리셋 버튼 클릭 이벤트 <<임시 이메일 보내기>>
+        # 리셋 버튼 클릭 이벤트
         self.reset.clicked.connect(self.on_reset_button_click)
 
         self.saved_messages = {
