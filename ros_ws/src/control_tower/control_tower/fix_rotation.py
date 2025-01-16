@@ -16,7 +16,6 @@ r1 = 130
 r2 = 124
 r3 = 126
 th1_offset = - math.atan2(0.024, 0.128)
-# 월드 좌표계 기준이라 90을 뺌 (시계방향 회전이라 마이너스)
 th2_offset = - 0.5 * math.pi - th1_offset
 
 joint_angle_delta = 0.1  # radian
