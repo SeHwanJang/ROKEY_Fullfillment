@@ -1,15 +1,13 @@
 # StartTime.srv
 
 # 요청 부분 (요청 메시지)
-int32 start_value  # 작업을 시작할 때 전달하는 값
-string job_list     # 작업 이름
-int32 constatus
-int32 datastatus 
+string job_list     # 작업 목록 (RED: 0,BLUE: 0)
+int32 constatus     # 컨베이어 벨트 동작 상태 값 (1 동작 / 0 정지)
+int32 datastatus    # 로봇뷰 이미지 캡쳐 시 전달하는 값 (1 동작)
 
 ---
 
 # 응답 부분 (응답 메시지)
-int32 result_value  # 처리된 결과 값
-string status       # 작업 처리 상태 (예: SUCCESS, FAILURE 등)
-string conv
-string data
+string status       # 작업 목록 처리 상태 (SUCCESS / FAILURE)
+string conv         # 컨베이어 벨트 동작 처리 상태
+string data         # 로봇뷰 이미지 캡쳐 처리 상태 (SUCCESS / FAILURE)
